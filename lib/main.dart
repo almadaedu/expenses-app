@@ -1,8 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:expenses_app/models/pages/home_page.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+void main() => runApp(const MainApp());
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -10,16 +11,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, //Faixa de debug
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Despesas pessoais'),
-          backgroundColor: Colors.blueGrey,
-        ),
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
