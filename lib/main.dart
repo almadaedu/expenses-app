@@ -1,4 +1,5 @@
 import 'package:expenses_app/models/pages/home_page.dart';
+import 'package:expenses_app/models/pages/splash_page.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -13,6 +14,9 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
+      theme: ThemeData(
+          useMaterial3: true,
+          colorSchemeSeed: const Color.fromARGB(0, 3, 132, 147)),
     );
   }
 }
